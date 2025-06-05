@@ -1,0 +1,56 @@
+.register-wrapper {
+  min-height: 100vh;
+  background: #f0f4f8; // เปลี่ยนพื้นหลังเป็นสีฟ้าอ่อน
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.register-card {
+  width: 100%;
+  max-width: 460px;
+  background-color: #ffffff; // พื้นหลังกล่องเป็นขาว
+  color: #333;
+  padding: 40px 32px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 32px;
+  font-size: 30px;
+  font-weight: 700;
+  color: #1976d2; // ฟ้า Material
+}
+
+.full-width {
+  width: 100%;
+}
+
+.mat-form-field {
+  margin-bottom: 20px;
+}
+
+mat-checkbox {
+  margin: 8px 0 24px;
+}
+
+button.full-width {
+  margin-bottom: 16px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+a {
+  color: #1976d2;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+}

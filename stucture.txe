@@ -1,0 +1,36 @@
+src/
+└── app/
+    ├── core/               # auth, guard, interceptor
+    │   ├── auth.service.ts
+    │   ├── auth.guard.ts
+    │   └── token.interceptor.ts
+    │
+    ├── shared/             # components, pipes, directives ใช้ร่วม
+    │   ├── components/
+    │   ├── pipes/
+    │   └── shared.module.ts
+    │
+    ├── auth/               # login, register
+    │   ├── login/
+    │   ├── register/
+    │   └── auth-routing.module.ts
+    │
+    ├── booking/            # จองคิว
+    ├── patients/           # ข้อมูลผู้ป่วย
+    ├── appointments/       # รายการคิวทั้งหมด
+    ├── doctors/            # ข้อมูลแพทย์
+    ├── dashboard/          # หน้าสรุปภาพรวม
+    │
+    ├── app-routing.module.ts
+    └── app.module.ts
+
+
+ng generate module core
+ng generate module shared
+
+ng generate module auth --route auth --module app
+ng generate module booking --route booking --module app
+ng generate module patients --route patients --module app
+ng generate module appointments --route appointments --module app
+ng generate module doctors --route doctors --module app
+ng generate module dashboard --route dashboard --module app

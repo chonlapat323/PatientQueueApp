@@ -1,0 +1,44 @@
+<div class="register-wrapper">
+  <mat-card class="register-card mat-elevation-z4">
+    <div class="logo">Patient Queue App</div>
+    <h2 class="title">Sign up</h2>
+
+    <form autocomplete="off" [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+      <mat-form-field appearance="fill" class="full-width">
+        <mat-label>Full name</mat-label>
+        <input matInput formControlName="username" />
+      </mat-form-field>
+
+      <mat-form-field appearance="fill" class="full-width">
+        <mat-label>Email</mat-label>
+        <input autocomplete="new-password" matInput formControlName="email" type="email" />
+      </mat-form-field>
+
+      <mat-form-field appearance="fill" class="full-width">
+        <mat-label>Password</mat-label>
+        <input  autocomplete="new-password" matInput formControlName="password" type="password" />
+      </mat-form-field>
+
+      <!-- <mat-checkbox class="mb-4">
+        I want to receive updates via email.
+      </mat-checkbox> -->
+
+      <button mat-raised-button color="primary" class="full-width">Sign up</button>
+
+
+      <button mat-stroked-button color="accent" class="full-width mb-2">
+        <mat-icon svgIcon="google"></mat-icon>
+        Sign up with Google
+      </button>
+
+      <button mat-stroked-button color="primary" class="full-width">
+        <mat-icon svgIcon="facebook" class="mr-2"></mat-icon>
+        Sign up with Facebook
+      </button>
+
+      <p class="text-center mt-4">
+        Already have an account? <a routerLink="/auth/sign-in">Sign in</a>
+      </p>
+    </form>
+  </mat-card>
+</div>
